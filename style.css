@@ -43,6 +43,10 @@
     height: 230px;
 }
 
+.header__desktop__nav {
+    display: none;
+}
+
 .header__title {
     font-size: 1.2rem;
     color: #ed632f;
@@ -56,12 +60,13 @@
 .header__btn {
     border-radius: 0rem 1.4rem 1.4rem 1.4rem;
     background: #ed632f;
-    border: 2px solid #ed632f;
+    border: 3px solid #ed632f;
     cursor: pointer;
     color: white;
     font-weight: 700;
     padding: 14px;
     width: 120px;
+    font-size: 1rem;
 }
 
 .main {
@@ -128,7 +133,11 @@
     .header__btn:hover {
         background: white;
         color: #ed632f;
-        border: 2px solid #ed632f;
+        border: 3px solid #ed632f;
+    }
+
+    .header {
+        height: 80px;
     }
 
     .main__content__img {
@@ -165,11 +174,66 @@
         align-items: center;
     }
 
-    .main__img > h3 {
+    .main__img > h3,
+    .main__img > h5 {
         display: none;
     }
 
-    .main__img:hover > h3 {
+    .main__img:hover > h3,
+    .main__img:hover > h5 {
         display: block;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__desktop__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-right: 20px;
+    }
+
+    .header__desktop__list {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 700px;
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+
+    .header__desktop__list li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid transparent;
+    }
+
+    .header__desktop__list li:hover {
+        cursor: pointer;
+        color: #ed632f;
+        border-bottom: 3px solid #ed632f;
+    }
+
+    .header__desktop__btn {
+        padding: 2px;
+        height: 50px;
+        width: 120px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+        background: #ffffff;
+        border: 3px solid #ed632f;
+    }
+
+    .header__desktop__btn:hover {
+        background: #ed632f;
+        color: white;
     }
 }
